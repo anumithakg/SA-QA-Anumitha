@@ -1,0 +1,34 @@
+Test Strategy Note for Sauce Demo Application
+
+- Version Control: GitHub/GitLab
+
+- Test Framework: Playwright + TypeScript for ease of execution, good reporting, and cross-browser support.
+
+1. Introduction
+The application under test is Sauce Demo(https://www.saucedemo.com/), an e-commerce demo site for testing and automation practice. Two types of users are provided:
+
+standard_user / secret_sauce (normal user)
+
+locked_out_user / secret_sauce (read-only locked out user)
+
+2. Key Tests to Automate First
+#Login Tests
+
+Valid login with standard_user
+
+Invalid login with locked_out_user (should be blocked)
+
+
+#Product Listing Page
+
+Select the 1st product listed
+
+#Add to Cart Functionality
+
+Add single item to cart
+
+#Checkout Flow
+
+Successful checkout flow.
+
+Use the back home button to go back to home page.
